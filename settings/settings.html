@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Warning Settings</h2>
+
+  <label>Popup Title</label><br>
+  <input id="title" /><br><br>
+
+  <label>Message</label><br>
+  <textarea id="message"></textarea><br><br>
+
+  <label>Warning Count (N)</label><br>
+  <input id="count" type="number" min="1" /><br><br>
+
+  <label>Target Button Selector</label><br>
+  <input id="selector" /><br><br>
+
+  <label>Theme</label><br>
+  <select id="theme">
+    <option value="default">Default</option>
+    <option value="danger">Danger (Red)</option>
+    <option value="warning">Warning (Yellow)</option>
+    <option value="info">Info (Blue)</option>
+  </select>
+  <br><br>
+
+  <button id="save">Save</button>
+
+  <script src="settings.js"></script>
+</body>
+</html>

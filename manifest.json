@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Button Warning Interceptor",
+  "version": "1.0",
+  "permissions": ["storage", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "settings/settings.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
